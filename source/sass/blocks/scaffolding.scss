@@ -17,17 +17,13 @@ body {
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: $dark-grey;
+  color: $light-grey;
   background-color: $white;
 }
 
 img {
   max-width: 100%;
   height: auto;
-}
-
-a {
-  text-decoration: none;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -47,7 +43,7 @@ input[type="radio"].visually-hidden {
 
 .container {
   width: 1440px;
-  padding: 0 30px;
+  padding: 0 13px;
   margin: 0 auto;
 }
 
@@ -66,7 +62,7 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
   background: none;
   cursor: pointer;
-  padding: 14px 12px;
+  padding: 14px 28px;
 
   &:hover {
     color: $white;

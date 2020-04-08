@@ -1,0 +1,100 @@
+.questions {
+  background-color: $blue;
+  background-image: url("../img/airplane.png");
+  background-position: 111px 161px;
+  background-repeat: no-repeat;
+}
+
+.questions__container {
+  padding: 91px 135px 75px 731px;
+}
+
+.questions__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: $white;
+  margin: 0;
+}
+
+.questions__text {
+  line-height: 22px;
+  color: $white;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+
+.questions__form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-left: 5px;
+}
+
+.questions__form-field {
+  margin-bottom: 37px;
+}
+
+.questions__form-field--info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  input {
+    width: 270px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: $white;
+    padding: 15px;
+  }
+}
+
+.questions__form-field textarea {
+  width: 100%;
+  height: 155px;
+  resize: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 12px 15px;
+}
+
+.questions__form-field input::placeholder,
+.questions__form-field textarea::placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+}
+
+.questions__form-field--checkbox {
+  display: flex;
+  justify-content: space-between;
+
+  label {
+    width: 270px;
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: $white;
+    padding-left: 40px;
+    padding-top: 8px;
+  }
+}
+
+.questions__btn {
+  width: 270px;
+  color: $white;
+  border-color: $white;
+
+  &:hover {
+    color: $blue;
+    background: $white;
+  }
+}

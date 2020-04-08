@@ -12,8 +12,8 @@
   <div class="header__container container">
     <a class="header__logo header-logo" aria-label="Smart Device">
       <picture>
-        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-        <img class="header-logo__image" src="img/logo-mobile.svg" width="134" height="30" alt="Логотип Smart Device">
+        <source media="(min-width: 1150px)" srcset="img/header-logo-desktop.svg">
+        <img class="header-logo__image" src="img/header-logo-mobile.svg" width="202" height="54" alt="Логотип Smart Device">
       </picture>
     </a>
     <ul class="header__feedback feedback">
@@ -33,7 +33,7 @@
     <div class="intro__container container">
       <h1 class="intro__title">Печатные платы</h1>
       <p class="intro__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <a href="#" class="intro__btn">Получить бесплатную консультацию</a>
+      <a href="#" class="intro__btn button">Получить бесплатную консультацию</a>
       <button class="intro__scroll-btn" type="button">Скролл вниз</button>
     </div>
   </section>
@@ -73,158 +73,162 @@
     <a class="about-us__to-all button" href="#">Подробнее</a>
   </section>
 
-  <section class="goods container">
-    <h2 class="goods__title">Service Device предлагает следующие товары и услуги</h2>
-    <ul class="goods__list">
-      <li class="goods__item">
-        <p class="goods__name">Производство печатных плат</p>
-        <button class="goods__btn">></button>
-      </li>
-      <li class="goods__item">
-        <p class="goods__name">Монтаж печатных плат</p>
-        <button class="goods__btn">></button>
-      </li>
-      <li class="goods__item">
-        <p class="goods__name">Комплектующие для светотехники</p>
-        <button class="goods__btn">></button>
-      </li>
-    </ul>
+  <section class="goods">
+    <div class="goods__container container">
+      <h2 class="goods__title">Service Device предлагает следующие товары и услуги</h2>
+      <ul class="goods__list">
+        <li class="goods__item goods__item--1">
+          <p class="goods__name">Производство печатных плат</p>
+          <button class="goods__btn">></button>
+        </li>
+        <li class="goods__item goods__item--2">
+          <p class="goods__name">Монтаж печатных плат</p>
+          <button class="goods__btn">></button>
+        </li>
+        <li class="goods__item goods__item--3">
+          <p class="goods__name">Комплектующие для светотехники</p>
+          <button class="goods__btn">></button>
+        </li>
+      </ul>
+    </div>
   </section>
 
   <section class="questions">
-  <section class="questions__container container">
-    <h2 class="questions__title">Остались вопросы? Задайте их нам!</h2>
-    <p class="questions__text">Мы проконсультируем Вас бесплатно</p>
-    <form action="https://echo.htmlacademy.ru" method="post" class="questions__form">
-      <label>
-        <input class="questions__item" type="text" name="name" placeholder="Имя">
-      </label>
-      <label>
-        <input class="questions__item" type="email" name="email" placeholder="Телефон">
-      </label>
-      <label>
-        <textarea class="questions__comment" name="comment" rows="8" placeholder="Ваш вопрос"></textarea>
-      </label>
-      <label>
-        <input class="questions__checkbox" type="checkbox">Я согласен на обработку персональных данных
-      </label>
-      <button type="submit" class="questions__btn button">Задать вопрос</button>
-    </form>
-  </section>
+    <div class="questions__container container">
+      <h2 class="questions__title">Остались вопросы? Задайте их нам!</h2>
+      <p class="questions__text">Мы проконсультируем Вас бесплатно</p>
+      <form action="https://echo.htmlacademy.ru" method="post" class="questions__form">
+        <div class="questions__form-field questions__form-field--info">
+          <input type="text" name="name" placeholder="Имя">
+          <input type="email" name="email" placeholder="Телефон">
+        </div>
+        <div class="questions__form-field">
+          <textarea name="comment" rows="8" placeholder="Ваш вопрос"></textarea>
+        </div>
+        <div class="questions__form-field questions__form-field--checkbox">
+          <button type="submit" class="questions__btn button">Задать вопрос</button>
+          <label>
+            <input type="checkbox" class="visually-hidden">Я согласен на обработку персональных данных
+          </label>
+        </div>
+      </form>
+    </div>
   </section>
 </main>
 
 <footer class="footer">
-  <div class="container">
-    <div class="footer-social">
-      <a class="footer-social__logo" aria-label="Smart Device">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-          <img class="footer-social__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Smart Device">
-        </picture>
-      </a>
-      <ul class="footer-social__list social">
-        <li class="social__item">
-          <a class="social__link social__link--fb" href="#"><span
-            class="visually-hidden">Мы в Фейсбуке</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--ok" href="#"><span
-            class="visually-hidden">Мы в Одноклассниках</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="#"><span
-            class="visually-hidden">Мы во Вконтакте</span></a>
-        </li>
-      </ul>
+  <div class="footer-top">
+    <div class="footer-top__container container">
+      <div class="footer-top-social">
+        <a class="footer-top-social__logo" aria-label="Smart Device">
+          <img class="footer-top-social__logo-image" src="img/footer-logo.svg" width="215" height="67" alt="Логотип Smart Device">
+        </a>
+        <ul class="footer-top-social__list social">
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#"><span
+              class="visually-hidden">Мы в Фейсбуке</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--ok" href="#"><span
+              class="visually-hidden">Мы в Одноклассниках</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#"><span
+              class="visually-hidden">Мы во Вконтакте</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-top-navigation">
+        <h3 class="footer-top-navigation__title">Разделы сайта</h3>
+        <ul class="footer-top-navigation__list navigation">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">О компании</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Комплектующие</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Продукты</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Доставка</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Производство печатных плат</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Контакты</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Монтаж печатных плат</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-top-contacts">
+        <h3 class="footer-top-contacts__title">Наш офис</h3>
+        <ul class="footer-top-contacts__list contacts">
+          <li class="contacts__item">
+            <p class="contacts__text">
+              г. Мытищи, Олимпийский проспект, д.10
+            </p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__text">
+              +7 (495) 589-40-50
+            </p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__text">
+              +7 (925) 003-87-67
+            </p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__text">
+              +7 (926) 926-080-79
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-navigation">
-      <h3 class="footer-navigation__title">Разделы сайта</h3>
-      <ul class="footer-navigation__list navigation">
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">О компании</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Продукты</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Производство печатных плат</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Монтаж печатных плат</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Комплектующие</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Доставка</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Контакты</a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer-contacts">
-      <h3 class="footer-contacts__title">Наш офис</h3>
-      <ul class="footer-contacts__list contacts">
-        <li class="contacts__item">
-          <p class="contacts__text">
-            г. Мытищи, Олимпийский проспект, д.10
-          </p>
-        </li>
-        <li class="contacts__item">
-          <p class="contacts__text">
-            +7 (495) 589-40-50
-          </p>
-        </li>
-        <li class="contacts__item">
-          <p class="contacts__text">
-            +7 (925) 003-87-67
-          </p>
-        </li>
-        <li class="contacts__item">
-          <p class="contacts__text">
-            +7 (926) 926-080-79
-          </p>
-        </li>
-      </ul>
-    </div>
-    <div class="footer-bottom">
-      <ul class="footer-bottom__copyright copyright">
-        <li class="copyright__item">
-          <p class="copyright__text">Все права защищены</p>
-        </li>
-        <li class="copyright__item">
-          <p class="copyright__text">1999-2018 SD Service Devices</p>
-        </li>
-        <li class="copyright__item">
-          <p class="copyright__text">Условия конфиденциальности</p>
-        </li>
-        <li class="copyright__item">
-          <p class="copyright__text">Developed by wow studio</p>
-        </li>
-      </ul>
-    </div>
+  </div>
+  <div class="footer-bottom container">
+    <ul class="footer-bottom__copyright copyright">
+      <li class="copyright__item">
+        <p class="copyright__text">Все права защищены</p>
+      </li>
+      <li class="copyright__item">
+        <p class="copyright__text">1999-2018 SD Service Devices</p>
+      </li>
+      <li class="copyright__item">
+        <p class="copyright__text">Условия конфиденциальности</p>
+      </li>
+      <li class="copyright__item">
+        <p class="copyright__text">Developed by wow studio</p>
+      </li>
+    </ul>
   </div>
 </footer>
 
 <div class="modal-overlay overlay">
   <div class="modal">
+    <button class="modal__close">Закрыть</button>
     <h2 class="modal__title">Закажите звонок</h2>
     <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form action="https://echo.htmlacademy.ru" method="post" class="modal__form">
-      <label>
-        <input class="modal__item" type="text" name="name" placeholder="Имя">
-      </label>
-      <label>
-        <input class="modal__item" type="email" name="email" placeholder="Телефон">
-      </label>
-      <label>
-        <textarea class="modal__comment" name="comment" rows="8" placeholder="Ваш вопрос"></textarea>
-      </label>
-      <label>
-        <input class="modal__checkbox" type="checkbox">Я согласен на обработку персональных данных
-      </label>
+      <div class="modal__form-field modal__form-field--name">
+        <input type="text" name="name" placeholder="Имя">
+      </div>
+      <div class="modal__form-field modal__form-field--email">
+        <input type="email" name="email" placeholder="Телефон">
+      </div>
+      <div class="modal__form-field">
+        <textarea name="comment" rows="8" placeholder="Ваш вопрос"></textarea>
+      </div>
+      <div class="modal__form-field modal__form-field--checkbox">
+        <label>
+          <input type="checkbox" class="visually-hidden">Я согласен на обработку персональных данных
+        </label>
+      </div>
       <button type="submit" class="modal__btn button">Отправить</button>
     </form>
   </div>

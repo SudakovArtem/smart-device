@@ -1,0 +1,25 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: url("../img/2005.png") no-repeat 105px 44px;
+  padding: 40px 135px 109px 315px;
+}
+
+.about-us__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: $light-grey;
+  margin: 0;
+}
+
+.about-us__text {
+  margin: 19px 0 6px;
+}
+
+.about-us__to-all {
+  width: 180px;
+  margin-top: 22px;
+}
