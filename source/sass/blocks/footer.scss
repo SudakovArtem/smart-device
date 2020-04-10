@@ -6,6 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 66px 0 58px 13px;
+  justify-content: space-between;
 }
 
 .footer-top-social {
@@ -35,6 +36,7 @@
 
   svg {
     fill: #cdcdcd;
+    transition: all 0.3s ease-out;
   }
 }
 
@@ -47,8 +49,7 @@
 }
 
 .footer-top-navigation {
-  width: 790px;
-  padding: 0 142px 0 135px;
+  width: 35.6%;
 }
 
 .footer-top-navigation__title {
@@ -248,6 +249,10 @@
     margin-top: 75px;
   }
 
+  .footer-top-navigation {
+    border-bottom: 1px solid $light-grey;
+  }
+
   .footer-top-navigation,
   .footer-top-contacts {
     display: flex;
@@ -259,6 +264,7 @@
 
   .footer-top-navigation__button,
   .footer-top-contacts__btn {
+    display: block;
     position: relative;
     width: 16px;
     height: 16px;
@@ -266,6 +272,7 @@
     background: none;
     padding: 0;
     cursor: pointer;
+    margin-left: auto;
 
     &::before,
     &::after {
@@ -304,6 +311,7 @@
 
   .navigation,
   .contacts {
+    width: 100%;
     visibility: hidden;
     max-height: 0;
     transition: max-height 0.5s linear, padding 0.5s linear;

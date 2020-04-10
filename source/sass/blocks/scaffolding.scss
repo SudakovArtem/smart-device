@@ -49,7 +49,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   padding: 0 13px;
   margin: 0 auto;
 }
@@ -70,6 +70,7 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
   background: none;
   cursor: pointer;
+  transition: all 0.3s ease-out;
   padding: 14px 28px;
 
   &:hover {
@@ -92,7 +93,6 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: $tablet) {
   .container {
-    width: 768px;
     padding: 0 50px;
   }
 
@@ -111,10 +111,6 @@ input[type="radio"].visually-hidden {
 }
 
 @media (max-width: $mobile) {
-  .container {
-    width: 320px;
-  }
-
   .tablet-text {
     display: none;
   }

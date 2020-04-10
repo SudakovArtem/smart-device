@@ -25,10 +25,10 @@
 
 .goods__item {
   position: relative;
-  width: 370px;
+  width: 31.6%;
   min-height: 620px;
   padding: 50px 154px 50px 44px;
-  margin-right: 30px;
+  margin-right: 2.6%;
   background: no-repeat center;
   background-size: cover;
 
@@ -73,6 +73,7 @@
   color: $white;
   opacity: 1;
   cursor: pointer;
+  transition: all 0.3s ease-out;
 
   &:hover {
     background-color: rgba(0, 178, 255, 0.3);

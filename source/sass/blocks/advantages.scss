@@ -11,12 +11,13 @@
 }
 
 .advantages__item {
-  width: 570px;
+  width: 48.7%;
   background-color: $white;
   border: 1px solid #ebebeb;
   border-left: 3px solid $blue;
   min-height: 299px;
-  margin-right: 30px;
+  transition: all 0.3s ease-out;
+  margin-right: 2.6%;
   margin-bottom: 30px;
   padding: 39px 43px 43px;
 

@@ -137,15 +137,15 @@
       <ul class="goods__list">
         <li class="goods__item goods__item--1">
           <p class="goods__name">Производство печатных плат</p>
-          <button class="goods__btn"></button>
+          <button class="goods__btn" type="button"></button>
         </li>
         <li class="goods__item goods__item--2">
           <p class="goods__name">Монтаж печатных плат</p>
-          <button class="goods__btn"></button>
+          <button class="goods__btn" type="button"></button>
         </li>
         <li class="goods__item goods__item--3">
           <p class="goods__name">Комплектующие для светотехники</p>
-          <button class="goods__btn"></button>
+          <button class="goods__btn" type="button"></button>
         </li>
       </ul>
     </div>
@@ -157,17 +157,17 @@
       <p class="questions__text">Мы проконсультируем Вас бесплатно</p>
       <form action="https://echo.htmlacademy.ru" method="post" class="questions__form">
         <div class="questions__form-field questions__form-field--info">
-          <input type="text" name="name" placeholder="Имя">
-          <input type="email" name="email" placeholder="Телефон">
+          <input type="text" name="name" placeholder="Имя" required="">
+          <input id="tel" name="phone" placeholder="Телефон" pattern=".{17,}" required="" title="Номер должен состоять минимум из 10 цифр">
         </div>
         <div class="questions__form-field">
-          <textarea name="comment" rows="8" placeholder="Ваш вопрос"></textarea>
+          <textarea name="comment" rows="8" placeholder="Ваш вопрос" required=""></textarea>
         </div>
         <div class="questions__form-field questions__form-field--checkbox">
           <button type="submit" class="questions__btn button">Задать вопрос</button>
           <label>
-            <input type="checkbox" class="visually-hidden">
-
+            <input type="checkbox" class="visually-hidden" required="">
+            <span class="questions__checkbox-indicator"></span>
             Я согласен на обработку персональных данных
           </label>
         </div>
@@ -282,23 +282,23 @@
 
 <div class="modal-overlay overlay">
   <div class="modal">
-    <button class="modal__close">Закрыть</button>
+    <button class="modal__close" type="button">Закрыть</button>
     <h2 class="modal__title">Закажите звонок</h2>
     <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form action="https://echo.htmlacademy.ru" method="post" class="modal__form">
       <div class="modal__form-field modal__form-field--name">
-        <input type="text" name="name" placeholder="Имя">
+        <input type="text" name="name" placeholder="Имя" required="">
       </div>
       <div class="modal__form-field modal__form-field--email">
-        <input type="email" name="email" placeholder="Телефон">
+        <input type="tel" name="tel" placeholder="Телефон" pattern=".{17,}" required="" title="Номер должен состоять минимум из 10 цифр">
       </div>
       <div class="modal__form-field">
-        <textarea name="comment" rows="8" placeholder="Ваш вопрос"></textarea>
+        <textarea name="comment" rows="8" required="" placeholder="Ваш вопрос"></textarea>
       </div>
       <button type="submit" class="modal__btn button">Отправить</button>
       <div class="modal__form-field modal__form-field--checkbox">
         <label>
-          <input type="checkbox" class="visually-hidden">
+          <input type="checkbox" class="visually-hidden" required="">
           <span class="modal__checkbox-indicator"></span>
           Я согласен на обработку персональных данных
         </label>

@@ -1,12 +1,18 @@
 .questions {
+  display: flex;
+  flex-wrap: wrap;
   background-color: $blue;
   background-image: url("../img/airplane.png");
-  background-position: 167px -59px;
+  background-position: 100px -59px;
   background-repeat: no-repeat;
 }
 
 .questions__container {
-  padding: 91px 135px 75px 731px;
+  width: 570px;
+  flex-shrink: 0;
+  padding: 91px 0 75px;
+  margin-left: auto;
+  margin-right: 19.5%;
 }
 
 .questions__title {
@@ -45,7 +51,7 @@
   margin-bottom: 40px;
 
   input {
-    width: 270px;
+    width: 47.8%;
     height: 50px;
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
@@ -97,6 +103,7 @@
     width: 16px;
     height: 16px;
     border: 1px solid $white;
+    cursor: pointer;
   }
 
   input[type="checkbox"]:checked + .questions__checkbox-indicator {
@@ -123,6 +130,8 @@
   }
 
   .questions__container {
+    width: 100%;
+    margin: 0;
     padding: 78px 88px 59px;
   }
 
@@ -138,16 +147,12 @@
     margin-bottom: 44px;
   }
 
-  .questions__form-field--info input {
-    width: 275px;
-  }
-
   .questions__btn {
     width: 278px;
   }
 
   .questions__form-field--checkbox label {
-    width: 276px;
+    width: 47.8%;
   }
 }
 
