@@ -11,7 +11,7 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
-  color: #ffffff;
+  color: $white;
   margin: 0;
 }
 
@@ -37,15 +37,15 @@
   }
 
   &--1 {
-    background-image: url("../img/goods-item1.png");
+    background-image: url("../img/goods-item1-desktop.png");
   }
 
   &--2 {
-    background-image: url("../img/goods-item2.png");
+    background-image: url("../img/goods-item2-desktop.png");
   }
 
   &--3 {
-    background-image: url("../img/goods-item3.png");
+    background-image: url("../img/goods-item3-desktop.png");
   }
 }
 
@@ -61,14 +61,93 @@
 .goods__btn {
   position: absolute;
   display: flex;
-  text-align: center;
-  justify-content: center;
   width: 63px;
   height: 63px;
   right: 0;
   bottom: 0;
+  background-image: url("../../img/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: $blue;
   border: none;
   color: $white;
   opacity: 1;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 178, 255, 0.3);
+  }
+
+  &:active {
+    background-color: rgba(0, 178, 255, 0.6);
+  }
+}
+
+@media (max-width: $tablet) {
+  .goods__container {
+    padding: 48px 25px 32px;
+  }
+
+  .goods__title {
+    font-size: 32px;
+    line-height: 46px;
+  }
+
+  .goods__list {
+    flex-direction: column;
+    margin: 49px 0 0;
+  }
+
+  .goods__item {
+    width: 100%;
+    min-height: 256px;
+    padding: 40px 502px 43px 43px;
+    margin-right: 0;
+    margin-bottom: 46px;
+
+    &--1 {
+      background-image: url("../img/goods-item1-tablet.png");
+    }
+
+    &--2 {
+      background-image: url("../img/goods-item2-tablet.png");
+    }
+
+    &--3 {
+      background-image: url("../img/goods-item3-tablet.png");
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .goods__container {
+    padding: 48px 14px 34px;
+  }
+
+  .goods__title {
+    font-size: 28px;
+    line-height: 40px;
+    padding-left: 10px;
+  }
+
+  .goods__list {
+    margin: 41px 0 0;
+  }
+
+  .goods__item {
+    padding: 20px 90px 20px 36px;
+    margin-bottom: 30px;
+
+    &--1 {
+      background-image: url("../img/goods-item1-mobile.png");
+    }
+
+    &--2 {
+      background-image: url("../img/goods-item2-mobile.png");
+    }
+
+    &--3 {
+      background-image: url("../img/goods-item3-mobile.png");
+    }
+  }
 }

@@ -1,13 +1,13 @@
 .intro {
   background-color: $dark-grey;
-  background-image: url("../img/intro-bg.png"), url("../img/microcircuits.png"), url("../img/triangles.png");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: center center, center right, -194px -4px;
-  background-size: cover, auto, auto;
+  background-image: url("../img/intro-bg.png"), url("../img/microchip-desktop.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, 1032px 151px;
+  background-size: cover, auto;
 }
 
 .intro__container {
-  padding: 310px 10px 128px;
+  padding: 316px 10px 128px;
 }
 
 .intro__title {
@@ -18,17 +18,28 @@
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white;
   margin: 0;
 }
 
 .intro__text {
+  position: relative;
   width: 706px;
   font-size: 22px;
   line-height: 34px;
-  color: #ffffff;
+  color: $white;
   margin: 28px 0 44px;
   padding-left: 97px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 2px;
+    background-color: $white;
+    left: 3px;
+    top: 17px;
+  }
 }
 
 .intro__btn {
@@ -42,6 +53,11 @@
   width: 407px;
   margin-left: 97px;
   padding: 18px;
+
+  &:hover {
+    color: $blue;
+    background: $white;
+  }
 }
 
 .intro__scroll-btn {
@@ -56,6 +72,79 @@
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
+  text-decoration: none;
   margin-top: 131px;
   margin-left: -43px;
+}
+
+@media (max-width: $tablet) {
+  .intro {
+    background-image: url("../img/intro-bg.png"), url("../img/microchip-tablet.png");
+    background-position: center center, 529px 2px;
+    background-size: cover, auto;
+  }
+
+  .intro__container {
+    padding: 190px 236px 162px 89px;
+  }
+
+  .intro__title {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.07em;
+  }
+
+  .intro__text {
+    width: auto;
+    margin: 30px 0 56px;
+    padding-left: 50px;
+    font-size: 18px;
+    line-height: 27px;
+
+    &::before {
+      width: 33px;
+      height: 2px;
+    }
+  }
+
+  .intro__btn {
+    margin-left: 50px;
+    width: 378px;
+  }
+
+  .intro__scroll-btn {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile) {
+  .intro {
+    background-image: url("../img/intro-bg.png"), url("../img/microchip-mobile.png");
+    background-position: center center, 201px 0;
+    background-size: cover, auto;
+  }
+
+  .intro__container {
+    padding: 286px 15px 70px;
+  }
+
+  .intro__title {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .intro__text {
+    margin: 26px 0 41px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .intro__btn {
+    margin-left: 3px;
+    width: 100%;
+  }
+
+  .intro__scroll-btn {
+    display: none;
+  }
 }

@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -41,6 +42,12 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.main__wrapper {
+  background-image: url("../img/triangles-destop.png");
+  background-repeat: no-repeat;
+  background-position: -6px -47px;
+}
+
 .container {
   width: 1440px;
   padding: 0 13px;
@@ -57,6 +64,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-decoration: none;
   color: $blue;
   border: 1px solid $blue;
   border-radius: 5px;
@@ -67,5 +75,56 @@ input[type="radio"].visually-hidden {
   &:hover {
     color: $white;
     background: $blue;
+  }
+}
+
+.tablet-text {
+  display: none;
+}
+
+.desktop-text {
+  display: inline;
+}
+
+.mobile-text {
+  display: none;
+}
+
+@media (max-width: $tablet) {
+  .container {
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  .main__wrapper {
+    background-image: url("../img/triangles-tablet.png");
+    background-position: 181px 101px;
+  }
+
+  .desktop-text {
+    display: none;
+  }
+
+  .tablet-text {
+    display: inline;
+  }
+}
+
+@media (max-width: $mobile) {
+  .container {
+    width: 320px;
+  }
+
+  .tablet-text {
+    display: none;
+  }
+
+  .mobile-text {
+    display: inline;
+  }
+
+  .main__wrapper {
+    background-image: url("../img/triangles-mobile.png");
+    background-position: 0 652px;
   }
 }

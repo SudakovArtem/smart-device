@@ -1,7 +1,7 @@
 .questions {
   background-color: $blue;
   background-image: url("../img/airplane.png");
-  background-position: 111px 161px;
+  background-position: 167px -59px;
   background-repeat: no-repeat;
 }
 
@@ -40,6 +40,7 @@
 
 .questions__form-field--info {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 40px;
 
@@ -59,7 +60,7 @@
   resize: none;
   background-color: rgba(255, 255, 255, 0.1);
   border: 0;
-  color: #ffffff;
+  color: $white;
   font-size: 16px;
   line-height: 22px;
   padding: 12px 15px;
@@ -75,9 +76,11 @@
 
 .questions__form-field--checkbox {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   label {
+    position: relative;
     width: 270px;
     font-family: "PT Mono", "Arial", sans-serif;
     font-size: 14px;
@@ -85,6 +88,21 @@
     color: $white;
     padding-left: 40px;
     padding-top: 8px;
+  }
+
+  input[type="checkbox"] + .questions__checkbox-indicator {
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $white;
+  }
+
+  input[type="checkbox"]:checked + .questions__checkbox-indicator {
+    background-image: url("../img/tick.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -96,5 +114,92 @@
   &:hover {
     color: $blue;
     background: $white;
+  }
+}
+
+@media (max-width: $tablet) {
+  .questions {
+    background-image: none;
+  }
+
+  .questions__container {
+    padding: 78px 88px 59px;
+  }
+
+  .questions__title {
+    font-size: 32px;
+  }
+
+  .questions__form {
+    margin-top: 54px;
+  }
+
+  .questions__form-field {
+    margin-bottom: 44px;
+  }
+
+  .questions__form-field--info input {
+    width: 275px;
+  }
+
+  .questions__btn {
+    width: 278px;
+  }
+
+  .questions__form-field--checkbox label {
+    width: 276px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .questions__container {
+    padding: 28px 14px 42px;
+  }
+
+  .questions__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .questions__text {
+    margin-top: 13px;
+    padding-left: 0;
+  }
+
+  .questions__form {
+    margin-top: 26px;
+    padding: 0;
+  }
+
+  .questions__form-field {
+    margin-bottom: 0;
+
+    textarea {
+      height: 104px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .questions__form-field--info {
+    flex-direction: column;
+  }
+
+  .questions__form-field--info input {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .questions__btn {
+    width: 100%;
+    margin-bottom: 23px;
+  }
+
+  .questions__form-field--checkbox label {
+    width: 100%;
+    padding-left: 34px;
+  }
+
+  .questions__form-field--checkbox input[type="checkbox"] + .questions__checkbox-indicator {
+    left: 2px;
   }
 }
