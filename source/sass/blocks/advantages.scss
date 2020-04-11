@@ -21,6 +21,14 @@
   margin-bottom: 30px;
   padding: 39px 43px 43px;
 
+  h3 {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    color: $blue;
+    margin: 14px 0 0;
+  }
+
   &:nth-child(2n) {
     margin-right: 0;
   }
@@ -36,7 +44,7 @@
   color: $white;
   cursor: pointer;
 
-  .advantages__name {
+  h3 {
     color: $white;
   }
 
@@ -45,45 +53,32 @@
   }
 }
 
-.advantages__name {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 24px;
-  line-height: 34px;
-  color: $blue;
-  margin: 14px 0 0;
-}
-
 @media (max-width: $tablet) {
   .advantages {
     padding: 54px 24px 18px;
   }
 
   .advantages__item {
-    width: 345px;
+    width: 48%;
     min-height: 232px;
     margin-bottom: 26px;
+    margin-right: 4%;
     padding: 25px 20px 25px 25px;
-  }
 
-  .advantages__name {
-    margin: 0;
-  }
+    h3 {
+      margin: 0;
+    }
 
-  .advantages__text {
-    line-height: 22px;
-    margin: 9px 0 0;
+    p {
+      line-height: 22px;
+      margin: 9px 0 0;
+    }
   }
 }
 
 @media (max-width: $mobile) {
   .advantages {
     padding: 37px 16px 18px 14px;
-  }
-
-  .advantages__name {
-    font-size: 20px;
-    line-height: 29px;
-    margin: 0;
   }
 
   .advantages__item {
@@ -100,10 +95,16 @@
     &--suppliers {
       padding-right: 11px;
     }
-  }
 
-  .advantages__text {
-    line-height: 22px;
-    margin-top: 9px;
+    h3 {
+      font-size: 20px;
+      line-height: 29px;
+      margin: 0;
+    }
+
+    .p {
+      line-height: 22px;
+      margin-top: 9px;
+    }
   }
 }

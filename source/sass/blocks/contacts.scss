@@ -1,0 +1,23 @@
+.contacts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__item {
+  margin: 3px 0;
+}
+
+.contacts__text {
+  font-size: 15px;
+  margin: 0;
+}
+
+@media (max-width: $mobile) {
+  .contacts {
+    width: 100%;
+    visibility: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  }
+}

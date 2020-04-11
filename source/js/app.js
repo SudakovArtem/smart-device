@@ -1,7 +1,12 @@
 'use strict';
 
 (function () {
+  var MATRIX = '+7 (___) ___ ____';
+  var DEFAULT_VALUE = 2;
+  var ESC_KEYCODE = 27;
+
   var modal = document.querySelector('.modal-overlay');
+  var footer = document.querySelector('.footer');
   var closeButton = modal.querySelector('.modal__close');
   var callButton = document.querySelector('.header__btn');
   var navigation = document.querySelector('.footer-top-navigation');
@@ -16,6 +21,9 @@
 
   var isStorageSupport = true;
   var storage = '';
+
+  footer.classList.remove('footer--no-js');
+  modal.classList.remove('modal-overlay--no-js');
 
   try {
     storage = localStorage.getItem('formData');
@@ -58,9 +66,10 @@
   function closeOrderForm(event) {
     var element = event.target;
 
-    if (element.classList.contains('modal-overlay') || event.keyCode === 27 || element.classList.contains('modal__close')) {
+    if (element.classList.contains('modal-overlay') || event.keyCode === ESC_KEYCODE || element.classList.contains('modal__close')) {
       modal.classList.remove('modal-overlay--opened');
     }
+    document.body.classList.remove('modal-open');
   }
 
   function openCallForm(event) {
@@ -76,17 +85,17 @@
     } else {
       modalName.focus();
     }
+    document.body.classList.add('modal-open');
   }
 
   function mask(event) {
-    var matrix = '+7 (___) ___ ____';
     var i = 0;
-    var def = matrix.replace(/\D/g, '');
+    var def = MATRIX.replace(/\D/g, '');
     var val = event.target.value.replace(/\D/g, '');
     if (def.length >= val.length) {
       val = def;
     }
-    event.target.value = matrix.replace(/./g, function (a) {
+    event.target.value = MATRIX.replace(/./g, function (a) {
       if (/[_\d]/.test(a) && i < val.length) {
         return val.charAt(i++);
       } else {
@@ -94,11 +103,12 @@
       }
     });
     if (event.target.type === 'blur') {
-      if (event.target.value.length === 2) {
+      if (event.target.value.length === DEFAULT_VALUE) {
         event.target.value = '';
       }
     }
   }
+
 
   inputTel.addEventListener('input', mask, false);
   inputTel.addEventListener('focus', mask, false);

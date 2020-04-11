@@ -1,0 +1,9 @@
+.footer-bottom {
+  padding: 0 16px 0 12px;
+}
+
+@media (max-width: $tablet) {
+  .footer-bottom {
+    padding: 8px 25px 8px 27px;
+  }
+}

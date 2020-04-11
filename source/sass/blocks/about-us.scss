@@ -4,19 +4,19 @@
   align-items: flex-start;
   background: url("../img/2005-desktop.png") no-repeat 105px 44px;
   padding: 40px 135px 109px 317px;
-}
 
-.about-us__title {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 51px;
-  color: $light-grey;
-  margin: 0;
-}
+  h2 {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+    color: $light-grey;
+    margin: 0;
+  }
 
-.about-us__text {
-  margin: 19px 0 2px;
+  p {
+    margin: 19px 0 2px;
+  }
 }
 
 .about-us__to-all {
@@ -29,15 +29,15 @@
     background-image: url("../img/2005-tablet.png");
     background-position: 0 10px;
     padding: 8px 16px 83px 209px;
-  }
 
-  .about-us__title {
-    font-size: 32px;
-  }
+    h2 {
+      font-size: 32px;
+    }
 
-  .about-us__text {
-    padding-left: 5px;
-    margin: 21px 0 0;
+    p {
+      padding-left: 5px;
+      margin: 21px 0 0;
+    }
   }
 
   .about-us__to-all {
@@ -50,18 +50,18 @@
   .about-us {
     background: none;
     padding: 17px 14px 64px;
-  }
 
-  .about-us__title {
-    font-size: 28px;
-    line-height: 42px;
-    margin: 0;
-  }
+    h2 {
+      font-size: 28px;
+      line-height: 42px;
+      margin: 0;
+    }
 
-  .about-us__text {
-    line-height: 22px;
-    padding-left: 3px;
-    margin: 21px 0 17px;
+    p {
+      line-height: 22px;
+      padding-left: 3px;
+      margin: 21px 0 17px;
+    }
   }
 
   .about-us__to-all {

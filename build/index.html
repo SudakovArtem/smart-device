@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device</title>
+  <meta name="description" content="Первый этап стажировки — онбординг в Лигу А">
+  <link rel="preload" href="fonts/ptmono.woff" as="font">
+  <link rel="preload" href="fonts/robotocondensed.woff" as="font">
+  <link rel="preload" href="fonts/robotocondensedbold.woff" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -47,7 +51,7 @@
     <a class="header__logo" aria-label="Smart Device">
       <picture>
         <source media="(min-width: 768px)" srcset="img/header-logo-desktop.svg">
-        <img class="header-logo__image" srcset="img/header-logo-mobile.svg" width="202" height="54" alt="Логотип Smart Device">
+        <img src="img/header-logo-mobile.svg" width="202" height="54" alt="Логотип Smart Device">
       </picture>
     </a>
     <ul class="header__feedback feedback">
@@ -89,41 +93,41 @@
           <svg class="user-navigation__link-image" width="29" height="35">
             <use xlink:href="#icon-stopwatch"></use>
           </svg>
-          <p class="advantages__name">Оперативные сроки</p>
-          <p class="advantages__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
+          <h3>Оперативные сроки</h3>
+          <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость,
             производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
         </li>
         <li class="advantages__item advantages__item--suppliers">
           <svg class="advantages__image" width="35" height="35">
             <use xlink:href="#icon-hired"></use>
           </svg>
-          <p class="advantages__name">Крупные поставщики</p>
-          <p class="advantages__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,
+          <h3>Крупные поставщики</h3>
+          <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,
             HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
         </li>
         <li class="advantages__item">
           <svg class="advantages__image" width="36" height="31">
             <use xlink:href="#icon-detective"></use>
           </svg>
-          <p class="advantages__name">Полная конфиденциальность</p>
-          <p class="advantages__text">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+          <h3>Полная конфиденциальность</h3>
+          <p>По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
         </li>
         <li class="advantages__item">
           <svg class="advantages__image" width="35" height="35">
             <use xlink:href="#icon-tag"></use>
           </svg>
-          <p class="advantages__name">Персонализация стоимости</p>
-          <p class="advantages__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту
+          <h3>Персонализация стоимости</h3>
+          <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту
             цену, которая Вас устраивает.</p>
         </li>
       </ul>
     </section>
 
     <section class="about-us container">
-      <h2 class="about-us__title">О компании</h2>
-      <p class="about-us__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем
+      <h2>О компании</h2>
+      <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем
         мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-      <p class="about-us__text">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
+      <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
         HOLGLITRONIC, REFOND. Печатные&nbsp;платы и комплектующие Service Devices применяются на предприятиях Российских
         Железных Дорог<span class="desktop-text"> (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
           Производители светотехники России.</span><span class="tablet-text">...</span></p>
@@ -137,15 +141,15 @@
       <ul class="goods__list">
         <li class="goods__item goods__item--1">
           <p class="goods__name">Производство печатных плат</p>
-          <button class="goods__btn" type="button"></button>
+          <button class="goods__btn" type="button"><span class="visually-hidden">Перейти по ссылке</span></button>
         </li>
         <li class="goods__item goods__item--2">
           <p class="goods__name">Монтаж печатных плат</p>
-          <button class="goods__btn" type="button"></button>
+          <button class="goods__btn" type="button"><span class="visually-hidden">Перейти по ссылке</span></button>
         </li>
         <li class="goods__item goods__item--3">
-          <p class="goods__name">Комплектующие для светотехники</p>
-          <button class="goods__btn" type="button"></button>
+          <p class="goods__name">Комплектующие для&nbsp;светотехники</p>
+          <button class="goods__btn" type="button"><span class="visually-hidden">Перейти по ссылке</span></button>
         </li>
       </ul>
     </div>
@@ -157,11 +161,17 @@
       <p class="questions__text">Мы проконсультируем Вас бесплатно</p>
       <form action="https://echo.htmlacademy.ru" method="post" class="questions__form">
         <div class="questions__form-field questions__form-field--info">
-          <input type="text" name="name" placeholder="Имя" required="">
+          <label><span class="visually-hidden">Имя</span>
+            <input type="text" name="name" placeholder="Имя" required="">
+          </label>
+          <label><span class="visually-hidden">Телефон</span>
           <input id="tel" name="phone" placeholder="Телефон" pattern=".{17,}" required="" title="Номер должен состоять минимум из 10 цифр">
+            </label>
         </div>
         <div class="questions__form-field">
-          <textarea name="comment" rows="8" placeholder="Ваш вопрос" required=""></textarea>
+          <label><span class="visually-hidden">Вопрос</span>
+            <textarea name="comment" placeholder="Ваш вопрос" required=""></textarea>
+          </label>
         </div>
         <div class="questions__form-field questions__form-field--checkbox">
           <button type="submit" class="questions__btn button">Задать вопрос</button>
@@ -176,12 +186,12 @@
   </section>
 </main>
 
-<footer class="footer">
+<footer class="footer footer--no-js">
   <div class="footer-top">
     <div class="footer-top__container container">
       <div class="footer-top-social">
         <a class="footer-top-social__logo" aria-label="Smart Device">
-          <img class="footer-top-social__logo-image" src="img/footer-logo.svg" width="215" height="67" alt="Логотип Smart Device">
+          <img src="img/footer-logo.svg" width="215" height="67" alt="Логотип Smart Device">
         </a>
         <ul class="footer-top-social__list social">
           <li class="social__item">
@@ -280,20 +290,26 @@
   </div>
 </footer>
 
-<div class="modal-overlay overlay">
+<div class="modal-overlay overlay modal-overlay--no-js">
   <div class="modal">
     <button class="modal__close" type="button">Закрыть</button>
     <h2 class="modal__title">Закажите звонок</h2>
     <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form action="https://echo.htmlacademy.ru" method="post" class="modal__form">
       <div class="modal__form-field modal__form-field--name">
-        <input type="text" name="name" placeholder="Имя" required="">
+        <label><span class="visually-hidden">Имя</span>
+          <input type="text" name="name" placeholder="Имя" required="">
+        </label>
       </div>
       <div class="modal__form-field modal__form-field--email">
+        <label><span class="visually-hidden">Телефон</span>
         <input type="tel" name="tel" placeholder="Телефон" pattern=".{17,}" required="" title="Номер должен состоять минимум из 10 цифр">
+          </label>
       </div>
       <div class="modal__form-field">
-        <textarea name="comment" rows="8" required="" placeholder="Ваш вопрос"></textarea>
+        <label><span class="visually-hidden">Вопрос</span>
+          <textarea name="comment" required="" placeholder="Ваш вопрос"></textarea>
+        </label>
       </div>
       <button type="submit" class="modal__btn button">Отправить</button>
       <div class="modal__form-field modal__form-field--checkbox">

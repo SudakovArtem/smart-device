@@ -2,12 +2,12 @@
   background-color: $dark-grey;
   background-image: url("../img/intro-bg.png"), url("../img/microchip-desktop.png");
   background-repeat: no-repeat, no-repeat;
-  background-position: center center, 1032px 151px;
+  background-position: center center, 1039px 155px;
   background-size: cover, auto;
 }
 
 .intro__container {
-  padding: 316px 10px 128px;
+  padding: 319px 8px 128px;
 }
 
 .intro__title {
@@ -80,7 +80,7 @@
 @media (max-width: $tablet) {
   .intro {
     background-image: url("../img/intro-bg.png"), url("../img/microchip-tablet.png");
-    background-position: center center, 529px 2px;
+    background-position: center center, 440px 1px;
     background-size: cover, auto;
   }
 
@@ -121,7 +121,7 @@
 @media (max-width: $mobile) {
   .intro {
     background-image: url("../img/intro-bg.png"), url("../img/microchip-mobile.png");
-    background-position: center center, 201px 0;
+    background-position: center center, 26px -4px;
     background-size: cover, auto;
   }
 

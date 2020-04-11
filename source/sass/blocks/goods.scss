@@ -4,15 +4,15 @@
 
 .goods__container {
   padding: 88px 135px 127px;
-}
 
-.goods__title {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 51px;
-  color: $white;
-  margin: 0;
+  h2 {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+    color: $white;
+    margin: 0;
+  }
 }
 
 .goods__list {
@@ -27,7 +27,7 @@
   position: relative;
   width: 31.6%;
   min-height: 620px;
-  padding: 50px 154px 50px 44px;
+  padding: 50px 137px 50px 44px;
   margin-right: 2.6%;
   background: no-repeat center;
   background-size: cover;
@@ -47,15 +47,15 @@
   &--3 {
     background-image: url("../img/goods-item3-desktop.png");
   }
-}
 
-.goods__name {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 20px;
-  line-height: 30px;
-  color: $white;
-  opacity: 1;
-  margin: 0;
+  p {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: $white;
+    opacity: 1;
+    margin: 0;
+  }
 }
 
 .goods__btn {
@@ -87,11 +87,11 @@
 @media (max-width: $tablet) {
   .goods__container {
     padding: 48px 25px 32px;
-  }
 
-  .goods__title {
-    font-size: 32px;
-    line-height: 46px;
+    h2 {
+      font-size: 32px;
+      line-height: 46px;
+    }
   }
 
   .goods__list {
@@ -123,13 +123,14 @@
 @media (max-width: $mobile) {
   .goods__container {
     padding: 48px 14px 34px;
+
+    h2 {
+      font-size: 28px;
+      line-height: 40px;
+      padding-left: 10px;
+    }
   }
 
-  .goods__title {
-    font-size: 28px;
-    line-height: 40px;
-    padding-left: 10px;
-  }
 
   .goods__list {
     margin: 41px 0 0;

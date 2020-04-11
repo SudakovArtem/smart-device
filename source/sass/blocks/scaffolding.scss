@@ -20,6 +20,10 @@ body {
   line-height: 22px;
   color: $light-grey;
   background-color: $white;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 img {
