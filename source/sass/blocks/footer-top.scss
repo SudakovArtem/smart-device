@@ -1,5 +1,5 @@
 .footer-top {
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $line-color;
 }
 
 .footer-top__container {
@@ -25,6 +25,7 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  color: $dark-grey;
   margin: 0 0 24px;
 }
 
@@ -39,6 +40,7 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  color: $dark-grey;
   margin: 0 0 26px;
 }
 
@@ -62,7 +64,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid $light-grey;
+    border-bottom: 1px solid $line-color;
     padding: 19px 7px 19px 25px;
   }
 
@@ -89,7 +91,7 @@
   }
 
   .footer-top-navigation {
-    border-bottom: 1px solid $light-grey;
+    border-bottom: 1px solid $line-color;
   }
 
   .footer-top-navigation,

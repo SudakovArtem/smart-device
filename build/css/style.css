@@ -883,12 +883,15 @@ input[type="radio"].visually-hidden {
   .questions__form-field--checkbox input[type="checkbox"] + .questions__checkbox-indicator {
     left: 2px; } }
 
+.footer {
+  color: rgba(27, 45, 55, 0.5); }
+
 @media (max-width: 1023px) {
   .footer {
     position: relative; } }
 
 .footer-top {
-  border-bottom: 1px solid #666666; }
+  border-bottom: 1px solid rgba(98, 105, 98, 0.2); }
 
 .footer-top__container {
   display: -webkit-box;
@@ -920,6 +923,7 @@ input[type="radio"].visually-hidden {
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  color: #1b2d37;
   margin: 0 0 24px; }
 
 .footer-top-contacts {
@@ -932,6 +936,7 @@ input[type="radio"].visually-hidden {
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  color: #1b2d37;
   margin: 0 0 26px; }
 
 .footer-top-navigation__button,
@@ -957,7 +962,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border-bottom: 1px solid #666666;
+    border-bottom: 1px solid rgba(98, 105, 98, 0.2);
     padding: 19px 7px 19px 25px; }
   .footer-top-navigation {
     width: 50%;
@@ -982,7 +987,7 @@ input[type="radio"].visually-hidden {
             align-items: center;
     padding: 47px 0 53px; }
   .footer-top-navigation {
-    border-bottom: 1px solid #666666; }
+    border-bottom: 1px solid rgba(98, 105, 98, 0.2); }
   .footer-top-navigation,
   .footer-top-contacts {
     display: -webkit-box;
@@ -1208,7 +1213,7 @@ input[type="radio"].visually-hidden {
 .navigation__link {
   font-size: 15px;
   line-height: 25px;
-  color: #666666;
+  color: rgba(27, 45, 55, 0.5);
   text-decoration: none; }
 
 @media (max-width: 1023px) {
