@@ -1,6 +1,6 @@
 'use strict';
 
-(function () {
+document.addEventListener('DOMContentLoaded', function ()  {
   var MATRIX = '+7 (___) ___ ____';
   var DEFAULT_VALUE = 2;
   var ESC_KEYCODE = 27;
@@ -113,4 +113,4 @@
   inputTel.addEventListener('input', mask, false);
   inputTel.addEventListener('focus', mask, false);
 
-})();
+});
