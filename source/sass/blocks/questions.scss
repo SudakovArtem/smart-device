@@ -2,9 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   background-color: $blue;
-  background-image: url("../img/airplane.png");
-  background-position: 175px -59px;
-  background-repeat: no-repeat;
 }
 
 .questions__container {
@@ -37,6 +34,7 @@
 }
 
 .questions__form {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -46,6 +44,16 @@
   margin-left: auto;
   margin-top: 50px;
   padding-left: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -284px;
+    left: -796px;
+    width: 720px;
+    height: 650px;
+    background: url("../img/airplane.png") no-repeat 0 0;
+  }
 }
 
 .questions__form-field {
@@ -90,9 +98,11 @@
   height: 155px;
   resize: none;
   background-color: rgba(255, 255, 255, 0.1);
+  font-family: "PT Mono", "Arial", sans-serif;
   color: $white;
   font-size: 16px;
   line-height: 22px;
+  overflow: hidden;
   padding: 12px 15px;
 }
 
@@ -181,6 +191,10 @@
     width: 595px;
     margin-top: 54px;
     margin-right: auto;
+
+    &::before {
+      display: none;
+    }
   }
 
   .questions__form-field {

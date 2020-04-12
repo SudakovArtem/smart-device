@@ -2,6 +2,10 @@
   color: $translucent-gray;
 }
 
+.footer-top-social__logo {
+  cursor: pointer;
+}
+
 @media (max-width: $tablet) {
   .footer {
     position: relative;

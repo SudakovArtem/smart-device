@@ -19,8 +19,8 @@
   <div class="header__container container">
     <a class="header__logo" aria-label="Smart Device">
       <picture>
-        <source media="(min-width: 768px)" srcset="img/header-logo-desktop.svg">
-        <img src="img/header-logo-mobile.svg" width="202" height="54" alt="Логотип Smart Device">
+        <source media="(max-width: 767px)" srcset="img/header-logo-mobile.svg">
+        <img src="img/header-logo-desktop.svg" width="202" height="54" alt="Логотип Smart Device">
       </picture>
     </a>
     <ul class="header__feedback feedback">
@@ -50,7 +50,8 @@
     <div class="intro__container container">
       <h1 class="intro__title">Печатные платы</h1>
       <p class="intro__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <a href="#questions" class="intro__btn button"><span class="desktop-text tablet-text">Получить бесплатную консультацию</span><span class="mobile-text">Бесплатная консультация</span></a>
+      <a href="#questions" class="intro__btn button"><span class="desktop-text tablet-text">Получить бесплатную консультацию</span><span
+        class="mobile-text">Бесплатная консультация</span></a>
       <a class="intro__scroll-btn" href="#advantages">Скролл вниз</a>
     </div>
   </section>
@@ -108,17 +109,23 @@
     <div class="goods__container container">
       <h2 class="goods__title">Service Device предлагает следующие товары и&nbsp;услуги</h2>
       <ul class="goods__list">
-        <li class="goods__item goods__item--1">
-          <p class="goods__name">Производство печатных плат</p>
-          <button class="goods__btn" type="button"><span class="visually-hidden">Перейти по ссылке</span></button>
+        <li class="goods__item">
+          <a href="#" class="goods__link goods__link--1">
+            <p class="goods__name">Производство печатных плат</p>
+            <button class="goods__btn" type="button"><span class="visually-hidden">Перейти по ссылке</span></button>
+          </a>
         </li>
-        <li class="goods__item goods__item--2">
-          <p class="goods__name">Монтаж печатных плат</p>
-          <button class="goods__btn" type="button"><span class="visually-hidden">Перейти по ссылке</span></button>
+        <li class="goods__item">
+          <a href="#" class="goods__link goods__link--2">
+            <p class="goods__name">Монтаж печатных плат</p>
+            <button class="goods__btn" type="button"><span class="visually-hidden">Перейти по ссылке</span></button>
+          </a>
         </li>
-        <li class="goods__item goods__item--3">
-          <p class="goods__name">Комплектующие для&nbsp;светотехники</p>
-          <button class="goods__btn" type="button"><span class="visually-hidden">Перейти по ссылке</span></button>
+        <li class="goods__item">
+          <a href="#" class="goods__link goods__link--3">
+            <p class="goods__name">Комплектующие для&nbsp;светотехники</p>
+            <button class="goods__btn" type="button"><span class="visually-hidden">Перейти по ссылке</span></button>
+          </a>
         </li>
       </ul>
     </div>
@@ -134,8 +141,8 @@
             <input type="text" name="name" placeholder="Имя" required>
           </label>
           <label><span class="visually-hidden">Телефон</span>
-          <input id="tel" name="phone" placeholder="Телефон" pattern=".{17,}" required title="Номер должен состоять минимум из 10 цифр">
-            </label>
+            <input id="tel" name="phone" placeholder="Телефон" pattern=".{17,}" required title="Номер должен состоять минимум из 10 цифр">
+          </label>
         </div>
         <div class="questions__form-field">
           <label><span class="visually-hidden">Вопрос</span>
@@ -275,8 +282,8 @@
       </div>
       <div class="modal__form-field modal__form-field--email">
         <label><span class="visually-hidden">Телефон</span>
-        <input type="tel" name="tel" placeholder="Телефон" pattern=".{17,}" required title="Номер должен состоять минимум из 10 цифр">
-          </label>
+          <input type="tel" name="tel" placeholder="Телефон" pattern=".{17,}" required title="Номер должен состоять минимум из 10 цифр">
+        </label>
       </div>
       <div class="modal__form-field">
         <label><span class="visually-hidden">Вопрос</span>

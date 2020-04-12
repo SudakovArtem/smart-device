@@ -23,6 +23,10 @@
   }
 }
 
+.header__logo {
+  cursor: pointer;
+}
+
 .header__feedback {
   display: flex;
   flex-wrap: wrap;
