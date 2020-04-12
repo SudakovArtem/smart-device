@@ -112,4 +112,5 @@
 
   inputTel.addEventListener('input', mask, false);
   inputTel.addEventListener('focus', mask, false);
+
 })();
