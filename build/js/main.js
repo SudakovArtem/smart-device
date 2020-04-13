@@ -1,6 +1,6 @@
 'use strict';
 
-document.addEventListener('DOMContentLoaded', function ()  {
+document.addEventListener('DOMContentLoaded', function () {
   var MATRIX = '+7 (___) ___ ____';
   var DEFAULT_VALUE = 2;
   var ESC_KEYCODE = 27;
