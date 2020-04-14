@@ -1236,7 +1236,9 @@ input[type="radio"].visually-hidden {
   font-size: 15px;
   color: rgba(27, 45, 55, 0.5);
   text-decoration: none;
-  margin: 0; }
+  margin: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
   .contacts__text:hover {
     color: #666666; }
 
@@ -1267,7 +1269,9 @@ input[type="radio"].visually-hidden {
   font-size: 15px;
   line-height: 25px;
   color: rgba(27, 45, 55, 0.5);
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
   .navigation__link:hover {
     color: #666666; }
 

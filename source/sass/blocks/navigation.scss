@@ -19,6 +19,7 @@
   line-height: 25px;
   color: $translucent-gray;
   text-decoration: none;
+  transition: all 0.3s ease-out;
 
   &:hover {
     color: $light-grey;
