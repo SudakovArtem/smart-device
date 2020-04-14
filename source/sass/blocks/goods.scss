@@ -3,7 +3,7 @@
 }
 
 .goods__container {
-  padding: 88px 135px 127px;
+  padding: 88px 135px 97px;
 
   h2 {
     font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -26,6 +26,7 @@
 .goods__item {
   width: 31.6%;
   margin-right: 2.6%;
+  margin-bottom: 30px;
 
   &:nth-child(3n) {
     margin-right: 0;
@@ -36,7 +37,7 @@
   display: block;
   position: relative;
   width: 100%;
-  background: no-repeat center;
+  background: #26353d no-repeat center;
   background-size: cover;
   min-height: 620px;
   text-decoration: none;
@@ -72,7 +73,7 @@
   height: 63px;
   right: 0;
   bottom: 0;
-  background-image: url("../../img/right-arrow.svg");
+  background-image: url("../img/right-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: $blue;

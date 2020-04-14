@@ -41,6 +41,7 @@
   src: local("Roboto Condensed Bold"), local("RobotoCondensed-Bold"), url("../fonts/robotocondensedbold.woff2") format("woff2"), url("../fonts/robotocondensedbold.woff") format("woff"); }
 
 html {
+  height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth; }
@@ -52,20 +53,36 @@ html {
           box-sizing: inherit; }
 
 body {
-  margin: 0;
-  padding: 0;
+  height: 100%;
   min-width: 320px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #666666;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0; }
   body.modal-open {
     overflow: hidden; }
 
 img {
   max-width: 100%;
   height: auto; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%; }
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -165,7 +182,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     width: 37px;
     height: 13px;
-    left: 331px;
+    left: 23%;
     top: 55px;
     border-bottom: 1px solid #ffffff;
     border-top: 1px solid #ffffff; }
@@ -271,7 +288,7 @@ input[type="radio"].visually-hidden {
   background-color: #1b2d37;
   background-image: url("../img/intro-bg.png"), url("../img/microchip-desktop.png");
   background-repeat: no-repeat, no-repeat;
-  background-position: center center, 1039px 155px;
+  background-position: center center, 85.6% 155px;
   background-size: cover, auto; }
 
 .intro__container {
@@ -425,7 +442,7 @@ input[type="radio"].visually-hidden {
   background-color: #00b2ff;
   border-color: transparent;
   color: #ffffff;
-  cursor: pointer; }
+  cursor: default; }
   .advantages__item:hover h3 {
     color: #ffffff; }
   .advantages__item:hover svg {
@@ -529,7 +546,7 @@ input[type="radio"].visually-hidden {
   background-color: #1b2d37; }
 
 .goods__container {
-  padding: 88px 135px 127px; }
+  padding: 88px 135px 97px; }
   .goods__container h2 {
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-weight: normal;
@@ -550,7 +567,8 @@ input[type="radio"].visually-hidden {
 
 .goods__item {
   width: 31.6%;
-  margin-right: 2.6%; }
+  margin-right: 2.6%;
+  margin-bottom: 30px; }
   .goods__item:nth-child(3n) {
     margin-right: 0; }
 
@@ -558,7 +576,7 @@ input[type="radio"].visually-hidden {
   display: block;
   position: relative;
   width: 100%;
-  background: no-repeat center;
+  background: #26353d no-repeat center;
   background-size: cover;
   min-height: 620px;
   text-decoration: none;
@@ -587,7 +605,7 @@ input[type="radio"].visually-hidden {
   height: 63px;
   right: 0;
   bottom: 0;
-  background-image: url("../../img/right-arrow.svg");
+  background-image: url("../img/right-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #00b2ff;
@@ -907,6 +925,9 @@ input[type="radio"].visually-hidden {
     left: 2px; } }
 
 .footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   color: rgba(27, 45, 55, 0.5); }
 
 .footer-top-social__logo {
@@ -948,6 +969,7 @@ input[type="radio"].visually-hidden {
   font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.05em;
+  font-weight: normal;
   text-transform: uppercase;
   color: #1b2d37;
   margin: 0 0 24px; }
@@ -961,6 +983,7 @@ input[type="radio"].visually-hidden {
   font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.05em;
+  font-weight: normal;
   text-transform: uppercase;
   color: #1b2d37;
   margin: 0 0 26px; }
@@ -1211,7 +1234,11 @@ input[type="radio"].visually-hidden {
 
 .contacts__text {
   font-size: 15px;
+  color: rgba(27, 45, 55, 0.5);
+  text-decoration: none;
   margin: 0; }
+  .contacts__text:hover {
+    color: #666666; }
 
 @media (max-width: 767px) {
   .contacts {
@@ -1241,6 +1268,8 @@ input[type="radio"].visually-hidden {
   line-height: 25px;
   color: rgba(27, 45, 55, 0.5);
   text-decoration: none; }
+  .navigation__link:hover {
+    color: #666666; }
 
 @media (max-width: 1023px) {
   .navigation {

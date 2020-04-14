@@ -10,7 +10,13 @@
 
 .contacts__text {
   font-size: 15px;
+  color: $translucent-gray;
+  text-decoration: none;
   margin: 0;
+
+  &:hover {
+    color: $light-grey;
+  }
 }
 
 @media (max-width: $mobile) {

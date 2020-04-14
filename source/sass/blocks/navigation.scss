@@ -19,6 +19,10 @@
   line-height: 25px;
   color: $translucent-gray;
   text-decoration: none;
+
+  &:hover {
+    color: $light-grey;
+  }
 }
 
 @media (max-width: $tablet) {
