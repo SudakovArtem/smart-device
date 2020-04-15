@@ -150,20 +150,24 @@
         transform: rotate(180deg);
       }
     }
+
+    &:hover {
+      &::before,
+      &::after {
+        background-color: $light-grey;
+      }
+    }
   }
 
   .footer-top-navigation.active .navigation,
   .footer-top-contacts.active .contacts {
-    max-height: fit-content;
-    overflow: auto;
+    display: block;
     padding: 8px 0 21px;
     visibility: visible;
   }
 
   .footer--no-js .navigation,
   .footer--no-js .contacts {
-    max-height: fit-content;
-    overflow: auto;
     padding: 8px 0 21px;
     visibility: visible;
   }

@@ -1092,20 +1092,17 @@ input[type="radio"].visually-hidden {
     .footer-top-contacts__btn.pressed::after {
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg); }
+    .footer-top-navigation__button:hover::before, .footer-top-navigation__button:hover::after,
+    .footer-top-contacts__btn:hover::before,
+    .footer-top-contacts__btn:hover::after {
+      background-color: #666666; }
   .footer-top-navigation.active .navigation,
   .footer-top-contacts.active .contacts {
-    max-height: -webkit-fit-content;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
-    overflow: auto;
+    display: block;
     padding: 8px 0 21px;
     visibility: visible; }
   .footer--no-js .navigation,
   .footer--no-js .contacts {
-    max-height: -webkit-fit-content;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
-    overflow: auto;
     padding: 8px 0 21px;
     visibility: visible; }
   .footer--no-js .footer-top-navigation__button,
@@ -1245,10 +1242,7 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .contacts {
     width: 100%;
-    visibility: hidden;
-    max-height: 0;
-    -webkit-transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out; } }
+    display: none; } }
 
 .navigation {
   display: -webkit-box;
@@ -1299,10 +1293,7 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .navigation {
     width: 100%;
-    visibility: hidden;
-    max-height: 0;
-    -webkit-transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out; } }
+    display: none; } }
 
 .modal {
   position: absolute;
