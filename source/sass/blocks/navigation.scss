@@ -51,6 +51,14 @@
 @media (max-width: $mobile) {
   .navigation {
     width: 100%;
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+
+    &--active {
+      max-height: fit-content;
+      overflow: visible;
+      padding: 8px 0 21px;
+    }
   }
 }

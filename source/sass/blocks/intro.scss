@@ -66,8 +66,7 @@
   width: 105px;
   background: none;
   border: none;
-  color: $white;
-  opacity: 0.5;
+  color: rgba(255, 255, 255, 0.5);
   transform: rotate(-90deg);
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 14px;
@@ -75,6 +74,11 @@
   text-decoration: none;
   margin-top: 131px;
   margin-left: -43px;
+  transition: color 0.3s ease-out;
+
+  &:hover {
+    color: $white;
+  }
 }
 
 @media (max-width: $tablet) {

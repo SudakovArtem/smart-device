@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
   var footer = document.querySelector('.footer');
   var closeButton = modal.querySelector('.modal__close');
   var callButton = document.querySelector('.header__btn');
-  var navigation = document.querySelector('.footer-top-navigation');
-  var contacts = document.querySelector('.footer-top-contacts');
-  var navigationToggle = document.querySelector('.footer-top-navigation__button');
-  var contactsToggle = document.querySelector('.footer-top-contacts__btn');
+  var navigation = document.querySelector('.navigation');
+  var contacts = document.querySelector('.contacts');
+  var navigationToggle = document.querySelector('.footer-top-navigation__title');
+  var contactsToggle = document.querySelector('.footer-top-contacts__title');
   var modalForm = modal.querySelector('form');
   var modalName = modal.querySelector('[name=name]');
   var modalTel = modal.querySelector('[name=tel]');
@@ -34,13 +34,13 @@ document.addEventListener('DOMContentLoaded', function () {
   if (navigationToggle) {
     navigationToggle.addEventListener('click', function (event) {
       event.preventDefault();
-      navigation.classList.toggle('active');
+      navigation.classList.toggle('navigation--active');
       navigationToggle.classList.toggle('pressed');
     });
 
     contactsToggle.addEventListener('click', function (event) {
       event.preventDefault();
-      contacts.classList.toggle('active');
+      contacts.classList.toggle('contacts--active');
       contactsToggle.classList.toggle('pressed');
     });
   }
