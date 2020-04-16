@@ -292,7 +292,10 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/intro-bg.png"), url("../img/microchip-desktop.png");
   background-repeat: no-repeat, no-repeat;
   background-position: center center, 86.2% 155px;
-  background-size: cover, 37%; }
+  background-size: cover, auto; }
+  @media (max-width: 1619px) {
+    .intro {
+      background-position: center center, 900px 155px; } }
 
 .intro__container {
   padding: 316px 8px 128px; }
