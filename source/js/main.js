@@ -68,8 +68,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (element.classList.contains('modal-overlay') || event.keyCode === ESC_KEYCODE || element.classList.contains('modal__close')) {
       modal.classList.remove('modal-overlay--opened');
+      document.body.classList.remove('modal-open');
     }
-    document.body.classList.remove('modal-open');
   }
 
   function openCallForm(event) {

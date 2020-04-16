@@ -10,13 +10,14 @@
 }
 
 .footer-top-social {
-  width: 274px;
+  width: 19%;
   display: flex;
   flex-direction: column;
 }
 
 .footer-top-navigation {
   width: 35.6%;
+  min-width: 375px;
 }
 
 .footer-top-navigation__title {
@@ -94,6 +95,7 @@
   }
 
   .footer-top-navigation {
+    min-width: auto;
     border-bottom: 1px solid $line-color;
   }
 

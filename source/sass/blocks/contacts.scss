@@ -30,7 +30,15 @@
     &--active {
       max-height: fit-content;
       overflow: visible;
-      padding: 0 0 21px;
+      padding: 11px 0 22px;
     }
+  }
+
+  .contacts__item {
+    margin: 0;
+  }
+
+  .contacts__text {
+    line-height: 25px;
   }
 }

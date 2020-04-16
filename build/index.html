@@ -59,7 +59,7 @@
       <ul class="header__feedback feedback">
         <li class="feedback__item">
           <a class="feedback__link" href="mailto:info@sd.ru">
-            <svg class="user-navigation__link-image" width="19" height="14">
+            <svg class="feedback__link-image" width="19" height="14">
               <use xlink:href="#icon-mail"></use>
             </svg>
             <span>info@sd.ru</span>
@@ -67,7 +67,7 @@
         </li>
         <li class="feedback__item">
           <a class="feedback__link feedback__link--tel" href="tel:+74950005252">
-            <svg class="user-navigation__link-image" width="18" height="18">
+            <svg class="feedback__link-image" width="18" height="18">
               <use xlink:href="#icon-phone"></use>
             </svg>
             <span>+7 (495) 000 52 52</span>
@@ -92,7 +92,7 @@
       <section class="advantages container">
         <ul class="advantages__list" id="advantages">
           <li class="advantages__item">
-            <svg class="user-navigation__link-image" width="29" height="35">
+            <svg class="advantages__item-image" width="29" height="35">
               <use xlink:href="#icon-stopwatch"></use>
             </svg>
             <h3>Оперативные сроки</h3>
@@ -144,22 +144,22 @@
         <h2 class="goods__title">Service Device предлагает следующие товары и&nbsp;услуги</h2>
         <ul class="goods__list">
           <li class="goods__item">
-            <a href="#" class="goods__link goods__link--1">
+            <div class="goods__link goods__link--1">
               <p class="goods__name">Производство печатных плат</p>
               <button class="goods__btn" type="button"><span class="visually-hidden">Перейти по ссылке</span></button>
-            </a>
+            </div>
           </li>
           <li class="goods__item">
-            <a href="#" class="goods__link goods__link--2">
+            <div class="goods__link goods__link--2">
               <p class="goods__name">Монтаж печатных плат</p>
               <button class="goods__btn" type="button"><span class="visually-hidden">Перейти по ссылке</span></button>
-            </a>
+            </div>
           </li>
           <li class="goods__item">
-            <a href="#" class="goods__link goods__link--3">
+            <div class="goods__link goods__link--3">
               <p class="goods__name">Комплектующие для&nbsp;светотехники</p>
               <button class="goods__btn" type="button"><span class="visually-hidden">Перейти по ссылке</span></button>
-            </a>
+            </div>
           </li>
         </ul>
       </div>
@@ -175,7 +175,7 @@
               <input type="text" name="name" placeholder="Имя" required="">
             </label>
             <label><span class="visually-hidden">Телефон</span>
-              <input id="tel" name="phone" placeholder="Телефон" pattern=".{17,}" required="" title="Номер должен состоять минимум из 10 цифр">
+              <input id="tel" type="tel" name="phone" placeholder="Телефон" pattern=".{17,}" required="" title="Номер должен состоять минимум из 10 цифр">
             </label>
           </div>
           <div class="questions__form-field">

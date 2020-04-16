@@ -44,7 +44,8 @@ html {
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-y: scroll; }
 
 *,
 *::before,
@@ -290,7 +291,7 @@ input[type="radio"].visually-hidden {
   background-color: #1b2d37;
   background-image: url("../img/intro-bg.png"), url("../img/microchip-desktop.png");
   background-repeat: no-repeat, no-repeat;
-  background-position: center center, 85.6% 155px;
+  background-position: center center, 1030px 155px;
   background-size: cover, auto; }
 
 .intro__container {
@@ -957,7 +958,7 @@ input[type="radio"].visually-hidden {
           justify-content: space-between; }
 
 .footer-top-social {
-  width: 274px;
+  width: 19%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -967,7 +968,8 @@ input[type="radio"].visually-hidden {
           flex-direction: column; }
 
 .footer-top-navigation {
-  width: 35.6%; }
+  width: 35.6%;
+  min-width: 375px; }
 
 .footer-top-navigation__title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1043,6 +1045,7 @@ input[type="radio"].visually-hidden {
             align-items: center;
     padding: 47px 0 53px; }
   .footer-top-navigation {
+    min-width: auto;
     border-bottom: 1px solid rgba(98, 105, 98, 0.2); }
   .footer-top-navigation,
   .footer-top-contacts {
@@ -1167,7 +1170,8 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .social {
-    margin-top: 75px; } }
+    margin-top: 75px;
+    margin-left: 12px; } }
 
 .copyright {
   display: -webkit-box;
@@ -1180,10 +1184,10 @@ input[type="radio"].visually-hidden {
   padding: 0; }
 
 .copyright__item--years {
-  margin-left: 73px; }
+  margin-left: 5.4%; }
 
 .copyright__item--terms {
-  margin-left: 142px; }
+  margin-left: 10%; }
 
 .copyright__item--dev {
   margin-left: auto; }
@@ -1262,7 +1266,11 @@ input[type="radio"].visually-hidden {
       max-height: -moz-fit-content;
       max-height: fit-content;
       overflow: visible;
-      padding: 0 0 21px; } }
+      padding: 11px 0 22px; }
+  .contacts__item {
+    margin: 0; }
+  .contacts__text {
+    line-height: 25px; } }
 
 .navigation {
   display: -webkit-box;
@@ -1275,9 +1283,11 @@ input[type="radio"].visually-hidden {
   padding: 0; }
 
 .navigation__item {
-  width: 60%; }
+  width: 60%;
+  min-width: 245px; }
   .navigation__item:nth-child(2n) {
-    width: 40%; }
+    width: 28%;
+    min-width: auto; }
 
 .navigation__link {
   font-size: 15px;
