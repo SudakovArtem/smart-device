@@ -365,8 +365,8 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 1023px) {
   .intro {
-    background-image: url("../img/intro-bg.png"), url("../img/microchip-tablet.png");
-    background-position: center center, 440px 1px;
+    background-image: url("../img/microchip-tablet.png"), url("../img/intro-bg.png");
+    background-position: 440px 1px, center center;
     background-size: cover, auto; }
   .intro__container {
     padding: 190px 89px 162px; }
@@ -392,9 +392,9 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .intro {
-    background-image: url("../img/intro-bg.png"), url("../img/microchip-mobile.png");
-    background-position: center center, 26px -4px;
-    background-size: cover, auto; }
+    background-image: url("../img/microchip-mobile.png"), url("../img/intro-bg.png");
+    background-position: 26px -4px, center center;
+    background-size: auto, cover; }
   .intro__container {
     padding: 286px 15px 70px; }
   .intro__title {
