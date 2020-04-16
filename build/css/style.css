@@ -295,7 +295,7 @@ input[type="radio"].visually-hidden {
   background-size: cover, auto; }
   @media (max-width: 1619px) {
     .intro {
-      background-position: center center, 900px 155px; } }
+      background-position: center center, 770px 155px; } }
 
 .intro__container {
   padding: 316px 8px 128px; }
